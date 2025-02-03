@@ -28,7 +28,7 @@ export default class PlatformGroup extends Phaser.GameObjects.Layer {
 			let platform2 = this.group.get(x2 , y);
 		}
 
-		this.maxPlatformDistance = scene.scale.height *2;
+		this.maxPlatformDistance = scene.scale.height * 1.5;
 		/* END-USER-CTR-CODE */
 	}
 
