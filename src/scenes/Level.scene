@@ -1,0 +1,154 @@
+{
+    "id": "01aefa93-6044-4159-8358-7e91310aa05f",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "importFileExtension": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Level",
+        "borderWidth": 1200
+    },
+    "displayList": [
+        {
+            "prefabId": "3fb3b195-c20f-49ef-b085-586b2e02634c",
+            "id": "1fbcce09-facd-4697-afa2-409f07041635",
+            "label": "platformGroup",
+            "scope": "CLASS"
+        },
+        {
+            "prefabId": "fc3ec1bd-aa37-4808-9933-fb2d83db5882",
+            "id": "af382e17-c360-45bd-80cf-dc63b9f67031",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "player2",
+            "displayName": "Player2",
+            "scope": "CLASS",
+            "x": 390,
+            "y": 749
+        },
+        {
+            "prefabId": "4ac99435-a3ea-40a9-9c4d-ca43c3e18be9",
+            "id": "c94faf43-ffaf-4372-bbfc-95fcb42e8bce",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "player1",
+            "displayName": "Player1",
+            "scope": "CLASS",
+            "x": 655,
+            "y": 669
+        },
+        {
+            "prefabId": "241f0703-a74b-458e-b26a-f34175860252",
+            "id": "a11d74cd-b1dd-46d9-8044-54d790b0696b",
+            "unlock": [
+                "x",
+                "y",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "p_Platform",
+            "x": 529,
+            "y": 597,
+            "scaleX": 100,
+            "scaleY": 1
+        },
+        {
+            "prefabId": "7bf8a19d-1211-4b59-bb38-b034085b171f",
+            "id": "bad62058-82e8-4cb7-9abc-438b5e96049a",
+            "label": "onAwakeActionScript",
+            "list": [
+                {
+                    "prefabId": "0ed1159f-ee3d-4ce9-82da-e76768c045b5",
+                    "id": "dbdf25fe-c4bc-495c-aaf7-a4dee25437ae",
+                    "unlock": [
+                        "sceneKey"
+                    ],
+                    "label": "launchSceneActionScript",
+                    "sceneKey": "UI"
+                }
+            ]
+        }
+    ],
+    "plainObjects": [
+        {
+            "id": "b0ba3a37-a3a7-4a83-b534-0b13972d16bd",
+            "type": "Collider",
+            "label": "collider",
+            "scope": "LOCAL",
+            "object1": "player1",
+            "object2": "platformGroup.group"
+        },
+        {
+            "id": "84400676-a3c1-405f-90f2-b3d697242f7e",
+            "type": "Collider",
+            "label": "collider_1",
+            "scope": "LOCAL",
+            "object1": "player2",
+            "object2": "platformGroup.group"
+        },
+        {
+            "id": "63bead77-9f94-47f9-912d-9eaed0d54f27",
+            "type": "Keyboard.Key",
+            "label": "leftKey",
+            "keyCode": "A"
+        },
+        {
+            "id": "a05dea56-11e8-4886-93d6-ee61ab923a3c",
+            "type": "Keyboard.Key",
+            "label": "rightKey",
+            "keyCode": "D"
+        },
+        {
+            "id": "3c5563b7-94ec-426e-9755-e2008774cfc9",
+            "type": "Keyboard.Key",
+            "label": "upKey",
+            "keyCode": "W"
+        },
+        {
+            "id": "965fd2dc-aa49-409c-ae97-220e920aa3e4",
+            "type": "Collider",
+            "label": "collider_2",
+            "scope": "LOCAL",
+            "object1": "player1",
+            "object2": "p_Platform"
+        },
+        {
+            "id": "653475a3-ffa9-42d0-a3e8-728614a5c65c",
+            "type": "Collider",
+            "label": "collider_3",
+            "scope": "LOCAL",
+            "object1": "player2",
+            "object2": "p_Platform"
+        },
+        {
+            "id": "6e5f3316-c2d8-4647-af7d-dcaa926828bd",
+            "type": "Keyboard.Key",
+            "label": "leftKey2",
+            "keyCode": "LEFT"
+        },
+        {
+            "id": "e5630d59-d928-49ec-b5c9-f727f0188529",
+            "type": "Keyboard.Key",
+            "label": "upKey2",
+            "keyCode": "UP"
+        },
+        {
+            "id": "6062fd70-6762-4d43-8089-d288d4884eeb",
+            "type": "Keyboard.Key",
+            "label": "rightKey2",
+            "keyCode": "RIGHT"
+        }
+    ],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}
