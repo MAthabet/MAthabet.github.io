@@ -1,0 +1,39 @@
+{
+    "id": "4ac99435-a3ea-40a9-9c4d-ca43c3e18be9",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "importFileExtension": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 430,
+        "borderHeight": 932
+    },
+    "displayList": [
+        {
+            "type": "ArcadeSprite",
+            "id": "735f5efe-5efc-4ff7-a142-dd0305b9e0bc",
+            "label": "arcadesprite_1",
+            "texture": {
+                "key": "player",
+                "frame": "player-idle-1.png"
+            },
+            "animationPlayMethod": 1,
+            "animationKey": "idle",
+            "up": false,
+            "body.width": 21,
+            "body.height": 42,
+            "body.offset.x": 29,
+            "body.offset.y": 23
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

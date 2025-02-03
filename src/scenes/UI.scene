@@ -1,0 +1,66 @@
+{
+    "id": "8618fb83-4aff-471f-a42e-7d94b9709bce",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "importFileExtension": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "UI",
+        "borderWidth": 1200
+    },
+    "displayList": [
+        {
+            "type": "Text",
+            "id": "4b3a0fbe-4bb9-45f8-a527-91a73c49d56e",
+            "label": "score1",
+            "scope": "CLASS",
+            "x": 916,
+            "y": 24,
+            "scaleX": 5,
+            "scaleY": 5,
+            "text": "0\n"
+        },
+        {
+            "type": "Text",
+            "id": "c4830813-6905-4544-94ff-1bf413c5130b",
+            "label": "score",
+            "scope": "CLASS",
+            "x": 263,
+            "y": 24,
+            "scaleX": 5,
+            "scaleY": 5,
+            "text": "0\n"
+        },
+        {
+            "type": "Text",
+            "id": "be5886a4-b182-405b-ad1f-3581aa67c728",
+            "label": "gameover",
+            "scope": "CLASS",
+            "x": 85,
+            "y": 250,
+            "visible": false,
+            "text": "You Won\n",
+            "fontSize": "90px"
+        },
+        {
+            "type": "Text",
+            "id": "7771fd9a-beea-4da2-bc98-c19c523d77a2",
+            "label": "gameover1",
+            "scope": "CLASS",
+            "x": 697,
+            "y": 250,
+            "visible": false,
+            "text": "You Lost\n",
+            "fontSize": "90px"
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}
