@@ -27,7 +27,7 @@ export default class P_Player2 extends Phaser.Physics.Arcade.Sprite {
 	{
 		if(this.body.touching.down)
 		{
-				this.play("idle", true);
+			this.play("idle", true);
 		}
 	}
 	jump()

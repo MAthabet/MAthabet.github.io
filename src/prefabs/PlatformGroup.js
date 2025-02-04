@@ -19,17 +19,17 @@ export default class PlatformGroup extends Phaser.GameObjects.Layer {
 		this.group = scene.add.group({
 			classType: P_Platform
 		})
-		for(let i = 0; i < 18; i++)
+		for(let i = 0; i < 9; i++)
 		{
 			let x = Phaser.Math.Between(30, scene.game.config.width/2);
 			let x2 = Phaser.Math.Between(scene.game.config.width/2, scene.game.config.width-30);
-			let y = scene.game.config.height - 64 * i - 32;
+			let y = scene.game.config.height - 96 * i - 64;
 			let platform = this.group.get(x,y);
 			let platform2 = this.group.get(x2 , y);
 		}
 
-		this.maxPlatformDistance = -scene.game.config.height +32 +(scene.game.config.height - 64 * 17 - 32);
-		this.lastPlatformYPosition = scene.game.config.height - 64 * 17 - 32;
+		this.maxPlatformDistance = -scene.game.config.height +32 +(scene.game.config.height - 96 * 8 - 32);
+		this.lastPlatformYPosition = scene.game.config.height - 96 * 8 - 32;
 		/* END-USER-CTR-CODE */
 	}
 
@@ -51,7 +51,7 @@ export default class PlatformGroup extends Phaser.GameObjects.Layer {
 
 		for(let i = 0; i < childrenToMove.length; i+=2)
 			{
-				let y = this.lastPlatformYPosition - 64 * Math.floor((i+2)/2);
+				let y = this.lastPlatformYPosition - 96 * Math.floor((i+2)/2);
 				childrenToMove[i].y = y;
 				childrenToMove[i].x = Phaser.Math.Between(30, this.scene.game.config.width/2);
 				childrenToMove[i+1].y = y;

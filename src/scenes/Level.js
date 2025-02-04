@@ -48,17 +48,17 @@ export default class Level extends Phaser.Scene {
 		this.add.existing(platformGroup);
 
 		// player2
-		const player2 = new P_Player2(this, 390, 749);
+		const player2 = new P_Player2(this, 380, 549);
 		this.add.existing(player2);
 
 		// player1
-		const player1 = new P_Player(this, 655, 669);
+		const player1 = new P_Player(this, 798, 556);
 		this.add.existing(player1);
 
 		// p_Platform
-		const p_Platform = new P_Platform(this, 529, 597);
+		const p_Platform = new P_Platform(this, 600, 597);
 		this.add.existing(p_Platform);
-		p_Platform.scaleX = 100;
+		p_Platform.scaleX = 15;
 		p_Platform.scaleY = 1;
 
 		// onAwakeActionScript
@@ -119,6 +119,7 @@ export default class Level extends Phaser.Scene {
 	// Write more your code here
 	yStart1;
 	yStart2;
+	startFollow = false;
 
 	create() 
 	{
@@ -133,7 +134,6 @@ export default class Level extends Phaser.Scene {
 		this.yStart2 = this.player2.y;
 
 	}
-
 	update()
 	{
 		let score1 = Math.floor((-this.player1.y + this.yStart1)/10);
@@ -178,10 +178,17 @@ export default class Level extends Phaser.Scene {
 		{
 			this.player2.jump();
 		}
-
+		
 		let y = this.player1.y < this.player2.y ? this.player1.y : this.player2.y;
+		if(this.startFollow)
+		{
 		//y -= this.game.config.height / 2 - 30;
-		this.cameras.main.centerOnY(y);
+			this.cameras.main.centerOnY(y);
+		}
+		else
+		{
+			y <= this.game.config.height / 2 - 30 ? this.startFollow = true : null;
+		}
 
 		this.scene.get("UI").updateScore(1, score1 > 0 ? score1 : 0);
 		this.scene.get("UI").updateScore(2, score2 > 0 ? score2 : 0);

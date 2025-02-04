@@ -27,8 +27,8 @@
             "label": "player2",
             "displayName": "Player2",
             "scope": "CLASS",
-            "x": 390,
-            "y": 749
+            "x": 380,
+            "y": 549
         },
         {
             "prefabId": "4ac99435-a3ea-40a9-9c4d-ca43c3e18be9",
@@ -40,8 +40,8 @@
             "label": "player1",
             "displayName": "Player1",
             "scope": "CLASS",
-            "x": 655,
-            "y": 669
+            "x": 798,
+            "y": 556
         },
         {
             "prefabId": "241f0703-a74b-458e-b26a-f34175860252",
@@ -53,9 +53,9 @@
                 "scaleY"
             ],
             "label": "p_Platform",
-            "x": 529,
+            "x": 600,
             "y": 597,
-            "scaleX": 100,
+            "scaleX": 15,
             "scaleY": 1
         },
         {
