@@ -136,9 +136,9 @@ export default class Level extends Phaser.Scene {
 
 	update()
 	{
-		let score1 = Math.floor(-this.player1.y + this.yStart1);
+		let score1 = Math.floor((-this.player1.y + this.yStart1)/10);
 
-		let score2 = Math.floor(-this.player2.y + this.yStart2);
+		let score2 = Math.floor((-this.player2.y + this.yStart2)/10);
 		if(this.isGameOver)
 		{
 			return;
@@ -146,7 +146,6 @@ export default class Level extends Phaser.Scene {
 		//player 1 input
 		if(this.leftKey.isDown)
 		{
-			console.log("left");
 			this.player1.move(-1);
 		}
 		else if(this.rightKey.isDown)
@@ -198,6 +197,7 @@ export default class Level extends Phaser.Scene {
 			this.scene.get("UI").whoWon(1);
 			this.isGameOver = true;
 		}
+		this.platformGroup.update();
 
 	}
 	/* END-USER-CODE */
